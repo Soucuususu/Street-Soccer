@@ -1,23 +1,20 @@
 # Street Soccer — protótipo offline
 
-Jogo de futebol 2D com visual pixelado, pensado para celular e PC. O menu funciona em pé; a partida pede o celular na horizontal.
+Jogo mobile em HTML, CSS e JavaScript, preparado para GitHub Pages.
 
-## Abrir no GitHub Pages
-1. Crie um repositório público no GitHub chamado `street-soccer`.
-2. Envie os quatro arquivos desta pasta para a raiz do repositório: `index.html`, `style.css`, `game.js` e `README.md`.
-3. No repositório, entre em **Settings → Pages**.
-4. Em **Build and deployment**, selecione **Deploy from a branch**, branch `main` e pasta `/ (root)`, depois salve.
-5. Aguarde o link do Pages aparecer nessa mesma tela.
+## Arquivos
+- `index.html` — menu, navegação e campo.
+- `style.css` — interface responsiva e controles.
+- `game.js` — simulação local, física básica, controles e salvamento.
 
 ## Controles
-- Celular: analógico esquerdo move; analógico direito mira; toque em **PASSE** para passar; segure **CHUTE** para carregar e solte para chutar.
-- PC: WASD/setas movem; mouse/toque nos analógicos também funcionam; `E` passa; barra de espaço carrega/solta chute; `Esc` pausa.
+- **Mover:** analógico esquerdo.
+- **Passe:** analógico próprio; a direção aponta o passe e a distância do centro controla a força. Solte para passar.
+- **Chute:** analógico próprio; a direção mira o chute e a barra de força oscila entre verde (fraco) e vermelho (forte). Solte para chutar.
+- **PC:** WASD/setas para mover, E para passe, espaço para chutar, Esc para pausar.
 
-## Já implementado
-- Partida local contra adversários controlados pelo jogo, placar e cronômetro.
-- Bola dominada junto ao jogador, passes, chute carregado, gols e reinício após gol.
-- Perfil, posição, cor de uniforme, histórico, estatísticas e criação de time guardados no `localStorage` do navegador.
-- Interface responsiva em cinza escuro, branco e verde.
+## Publicar no GitHub Pages
+Envie os arquivos para a raiz do repositório. Depois, em **Settings → Pages**, selecione **Deploy from a branch**, branch `main` e pasta `/ (root)`.
 
-## Ainda não implementado
-Multiplayer real, servidor, login, chat online, matchmaking, convites e times compartilhados. GitHub Pages hospeda os arquivos estáticos; recursos online exigirão backend/servidor.
+## Limitações desta versão
+A partida é offline, com IA local simples. O contador online mostra `0 online / OFFLINE` porque ainda não há servidor. Comunidade e Top globais são páginas de pré-lançamento; chat, contas, matchmaking e rankings reais exigem backend.
