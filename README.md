@@ -1,16 +1,23 @@
-# Street Soccer 2D
+# Street Soccer — protótipo offline
 
-Protótipo de futebol 2D para navegador, com Canvas e JavaScript.
+Jogo de futebol 2D com visual pixelado, pensado para celular e PC. O menu funciona em pé; a partida pede o celular na horizontal.
+
+## Abrir no GitHub Pages
+1. Crie um repositório público no GitHub chamado `street-soccer`.
+2. Envie os quatro arquivos desta pasta para a raiz do repositório: `index.html`, `style.css`, `game.js` e `README.md`.
+3. No repositório, entre em **Settings → Pages**.
+4. Em **Build and deployment**, selecione **Deploy from a branch**, branch `main` e pasta `/ (root)`, depois salve.
+5. Aguarde o link do Pages aparecer nessa mesma tela.
 
 ## Controles
-- Celular: joystick virtual, PASSE, CHUTE e CORRER.
-- PC: WASD/setas, Espaço para chutar e Shift para correr.
-- Partida de 2 minutos; primeiro time a 3 gols vence.
+- Celular: analógico esquerdo move; analógico direito mira; toque em **PASSE** para passar; segure **CHUTE** para carregar e solte para chutar.
+- PC: WASD/setas movem; mouse/toque nos analógicos também funcionam; `E` passa; barra de espaço carrega/solta chute; `Esc` pausa.
 
-## Publicar com GitHub Pages
-1. Crie um repositório público.
-2. Envie `index.html` para a raiz.
-3. Vá a Settings → Pages.
-4. Escolha Deploy from a branch, `main`, `/ (root)` e Save.
+## Já implementado
+- Partida local contra adversários controlados pelo jogo, placar e cronômetro.
+- Bola dominada junto ao jogador, passes, chute carregado, gols e reinício após gol.
+- Perfil, posição, cor de uniforme, histórico, estatísticas e criação de time guardados no `localStorage` do navegador.
+- Interface responsiva em cinza escuro, branco e verde.
 
-Este protótipo ainda não inclui multiplayer online.
+## Ainda não implementado
+Multiplayer real, servidor, login, chat online, matchmaking, convites e times compartilhados. GitHub Pages hospeda os arquivos estáticos; recursos online exigirão backend/servidor.
